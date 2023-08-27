@@ -1,0 +1,333 @@
+/* Reseting default */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container h3 {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #303030b6;
+    margin-bottom: 18px;
+}
+
+/* Header style */
+
+header {
+    box-shadow: 0px 0px 5px black;
+    width: 100%;
+    position: sticky;
+    background-color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 38px;
+}
+
+header .container li {
+    display: inline;
+}
+
+header .container li a {
+    text-decoration: none;
+    color: #303030;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 24px 10px;
+    border-bottom: 2px solid transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header .container li a:hover {
+    border-bottom: 2px solid red;
+    transition: all .55s ease;
+}
+
+/* Login/Favorite/Chat style */
+
+header .container .login img {
+    height: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+header .container .login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .login .entrar {
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+header .container .entrar img {
+    height: 19px;
+    margin-right: 5px;
+}
+
+header .container .entrar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+/* SlideDown style */
+
+.slideDown ul {
+    text-align: center;
+    padding: 14px;
+}
+
+.slideDown li {
+    display: inline;
+    margin: 0px 4px;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 3px 3px 0px black;
+    cursor: pointer;
+}
+
+.slideDown li:hover {
+    background-color: #303030;
+    color: #fff;
+    transition: all .15s ease;
+}
+
+.slideDown li:active {
+    box-shadow: -1px -1px 0px black;
+    background-color: rgba(255, 0, 0, 0.774);
+    color: #fff;
+}
+
+#slideDownComprar,
+#slideDownVender,
+#slideDownServiços,
+#SlideDownNoticias,
+#slideDownAjuda {
+    display: none
+}
+
+/* Main style */
+
+body {
+    background-color: #cfcfcf31;
+}
+
+
+/* Search car model input style */
+
+.search-car-model {
+    position: relative;
+    bottom: 35px;
+    max-width: 950px;
+    margin: 0px auto;
+    padding: 32px;
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
+}
+
+.search-car-model ul {
+    margin-bottom: 32px;
+}
+
+.search-car-model li {
+    display: inline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 20px;
+    padding: 4px 0px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #303030b7;
+}
+
+.search-car-model li:hover {
+    cursor: pointer;
+    color: #303030;
+}
+
+.border-bottom-li {
+    border-bottom: 3px solid red;
+}
+
+.search-car-model input {
+    width: 600px;
+    height: 55px;
+    padding: 0px 16px;
+    margin-right: 30px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid #30303046;
+    box-shadow: 0px 0px 2px #303030;
+    outline: none;
+}
+
+.search-car-model button {
+    width: 200px;
+    height: 55px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 5px gray;
+    background-color: red;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.search-car-model button:hover {
+    background-color: rgba(255, 0, 0, 0.918);
+}
+
+/* Last search style */
+
+#last-search {
+    margin-bottom: 24px;
+}
+
+#last-search .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#last-search .container .blocos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#last-search .container .blocos div {
+    text-align: center;
+    width: 170px;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+
+#last-search .container .blocos .text {
+    background-color: rgb(105, 105, 119);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 8px 16px;
+    box-shadow: 0px 0px 2px black;
+}
+
+#last-search .container .blocos .text h5 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+#last-search .container .blocos .text p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+#last-search .container .blocos h6 {
+    font-weight: normal;
+    margin: 15px 35px;
+    padding: 1px 3px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#last-search .container .blocos div .location {
+    background-color: #fff;
+    padding: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Seção categorias style */
+
+#categorias .container {
+    max-width: 1200px;
+    margin: 24px auto;
+    display: block;
+}
+
+#categorias .container .images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#categorias .container .images img {
+    border-radius: 10px;
+    height: 210px;
+    margin: 0px 18px;
+    cursor: pointer;
+}
+
+/* Recommended models style */
+
+#modelos-recomendados .container {
+    max-width: 1200px;
+    margin: 24px auto;
+    display: block;
+}
+
+#modelos-recomendados .container .caixas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modelo-recomendado {
+    margin: 0px 12px;
+    width: 180px;
+    cursor: pointer;
+    transition: all .55s ease;
+}
+
+.modelo-recomendado:hover {
+    scale: 1.02;
+}
+
+.modelo-recomendado .text {
+    background-color: #fff;
+    padding: 24px 0px;
+    padding-left: 24px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.137);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#modelos-recomendados .container .caixas img {
+    width: 180px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.137);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.modelo-recomendado h4 {
+    font-weight: 800;
+    font-size: 16px;
+    color: #070816;
+}
+
+.modelo-recomendado strong {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+}
+
