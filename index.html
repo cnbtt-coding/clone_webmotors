@@ -278,29 +278,29 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contato">
         <div class="container">
             <h3>Entre em contato</h3>
             <form>
                 <div>
                     <label for="nome">Nome:</label>
-                    <input id="nome" type="text">
+                    <input id="nome" type="text" name="nome">
                 </div>
                 <div>
                     <label for="email">E-mail:</label>
-                    <input id="nome" type="email">
+                    <input id="email" type="email" name="email">
                 </div>
                 <div>
                     <label for="telefone">Telefone:</label>
-                    <input id="telefone" type="tel">
+                    <input id="telefone" type="tel" name="telefone">
                 </div>
                 <div>
                     <label for="veiculo-interesse">Veículo de interesse:</label>
-                    <input id="nome" type="text">
+                    <input id="nome-veiculo" type="text" name="veiculo">
                 </div>
                 <div>
                     <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem"></textarea>
+                    <textarea id="mensagem" name="textarea"></textarea>
                 </div>
                 <button type="submit">
                     ENVIAR
@@ -309,9 +309,11 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="./script.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
