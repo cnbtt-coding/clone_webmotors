@@ -22,8 +22,11 @@ html {
 header {
     box-shadow: 0px 0px 5px black;
     width: 100%;
-    position: sticky;
     background-color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header .container {
@@ -48,7 +51,7 @@ header .container li a {
 }
 
 header .container li a:hover {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid rgb(225, 17, 56);
     transition: all .55s ease;
 }
 
@@ -111,7 +114,7 @@ header .container .entrar a {
 
 .slideDown li:active {
     box-shadow: -1px -1px 0px black;
-    background-color: rgba(255, 0, 0, 0.774);
+    background-color: rgb(225, 17, 56);
     color: #fff;
 }
 
@@ -164,7 +167,7 @@ body {
 }
 
 .border-bottom-li {
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid rgb(225, 17, 56);
 }
 
 .search-car-model input {
@@ -180,19 +183,16 @@ body {
 }
 
 .search-car-model button {
-    width: 200px;
+    width: 250px;
     height: 55px;
     border-radius: 8px;
     border: none;
     box-shadow: 0px 0px 5px gray;
-    background-color: red;
+    background-color: rgb(225, 17, 56);
     color: #fff;
+    font-size: 17px;
     font-weight: 600;
     cursor: pointer;
-}
-
-.search-car-model button:hover {
-    background-color: rgba(255, 0, 0, 0.918);
 }
 
 /* Last search style */
@@ -276,15 +276,15 @@ body {
     cursor: pointer;
 }
 
-/* Recommended models style */
+/* Most searched style */
 
-#modelos-recomendados .container {
+#mais-buscados .container {
     max-width: 1200px;
     margin: 24px auto;
     display: block;
 }
 
-#modelos-recomendados .container .caixas {
+#mais-buscados .container .caixas {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -311,7 +311,7 @@ body {
     border-top-right-radius: 10px;
 }
 
-#modelos-recomendados .container .caixas img {
+#mais-buscados .container .caixas img {
     width: 180px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.137);
     border-bottom-left-radius: 10px;
@@ -328,6 +328,173 @@ body {
     font-family: sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color: red;
+    color: rgb(225, 17, 56);
 }
+
+/* Recommended models style */
+
+#recomendados .container {
+        max-width: 1200px;
+        margin: 24px auto;
+        display: block;
+}
+
+#recomendados .container #articles {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    text-align: left;
+}
+
+#recomendados .container #articles article {
+    position: relative;
+    margin: 0px 8px;
+    width: 100%;
+    height: 370px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.089);
+    cursor: pointer;
+}
+
+#recomendados .container #articles article img {
+    height: 150px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#recomendados .container #articles article h4 {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-top: 13px;
+    margin-left: 18px;
+}
+
+#recomendados .container #articles article > p {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-left: 18px;
+    color: #303030a1;
+}
+
+#recomendados .container #articles article h3 {
+    position: absolute;
+    bottom: 50px;
+    font-size: 21px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-top: 48px;
+    margin-left: 18px;
+    color: #303030cc;
+}
+
+#recomendados .container #articles article button {
+    position: absolute;
+    bottom: 13px;
+    left: 38px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(225, 17, 56);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px black;
+    transition: all .55s ease;
+}
+
+#recomendados .container #articles article button:hover {
+    box-shadow: -2px -2px 0px black;
+}
+
+#recomendados .container #articles article .ano {
+    position: absolute;
+    bottom: 52px;
+}
+
+#recomendados .container #articles article .km {
+    position: absolute;
+    bottom: 52px;
+    left: 130px;
+}
+
+/* Footer/form */
+
+footer {
+    background-color: rgb(225, 17, 56);
+}
+
+footer .container {
+    display: block;
+    max-width: 1200px;
+    margin: 0px 100px;
+    padding: 20px;
+}
+
+footer .container h3 {
+    padding: 14px;
+    color: #fff;
+    text-shadow: 0px 0px 2px black;
+}
+
+footer .container form label {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 18px;
+}
+
+footer .container form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+footer .container form input {
+    height: 20px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffffff4b;
+}
+
+footer .container form
+input,
+textarea,
+button {
+    width: 25%;
+    resize: none;
+}
+
+textarea {
+    resize: none;
+    font-size: 16px;
+    outline: none;
+    height: 130px;
+}
+
+footer .container form button {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0px black;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
 
